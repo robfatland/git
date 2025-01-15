@@ -2,6 +2,7 @@ This folder is for Python code rendered as video content using `manim`.
 Quoting the [`nexus` page](https://github.com/robfatland/nexus/blob/gh-pages/manim/index.md):
 
 
+* Install `manim` and `LaTeX`
 * Edit some code `myvideo.py`
 
 
