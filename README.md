@@ -17,5 +17,27 @@ couple GitHub repos: I'm back to the topic of interest and I never need to think
     - branches, pull requests, `stash`, `stash pop`, reconciling content, ...
 - What else can `GitHub` do?
     - actions, pages, `hugo`, associated data volumes > 100MB, ...
+- How about programmatic access to `GitHub`?
+    - ...see below...
+ 
+
+Python has a `requests` library available; so the following example code uses that
+to start tapping into the `GitHub` API.
+
+
+```
+import requests
+response = requests.get("https://api.github.com")
+
+print('\nThe basic response:')
+print(response)
+print('\nstatus code:')
+print(response.status_code)
+print('\nsome of the response text:')
+print(response.text[:300])
+response_dictionary = response.json()
+print('\nA response dictionary entry:')
+print(response_dictionary['gists_url'])
+```
 
 
