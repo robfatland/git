@@ -6,7 +6,7 @@ Our first notion is a modular video documenting `git` in relation to `github`.
 > Note: Rob's [nexus manim entry](https://github.com/robfatland/nexus/blob/gh-pages/manim/index.md)
 > has manim community / resource links.
 
-Rob's original thesis is "I get 98% of my safe backup value by knowing the 5-command recipe: 
+Rob's original thesis is "I get 94% of my safe backup value by knowing the 5-command recipe: 
 `get clone / pull / add / commit / push`. Once I have these memorized and I've created a
 couple GitHub repos: I'm back to the topic of interest and I never need to think about
 `git` ever again, hurray."
@@ -19,6 +19,9 @@ couple GitHub repos: I'm back to the topic of interest and I never need to think
     - actions, pages, `hugo`, associated data volumes > 100MB, ...
 - How about programmatic access to `GitHub`?
     - ...see below...
+- Oops I made a repo-scale mistake: How do I repair it
+    - Common error: I generated a 200MB file... that I tried to push: How do I purge it from the repo entirely?
+    - Identical error: I generated a file with sensitive information: How do I purge it from the repo entirely?
  
 
 Python has a `requests` library available; so the following example code uses that
